@@ -1,48 +1,51 @@
 import './style.css'
 import lottie from 'lottie-web'
-import proposalAnimationData from './assets/cute.json'
-import celebrationAnimationData from './assets/yay.json'
-import sadAnimationData from './assets/sad.json'
+import proposalAnimationData from './assets/kuan.json'
+import celebrationAnimationData from './assets/balshi.json'
+import sadAnimationData from './assets/shibal.json'
 
 let yesButtonScale = 1;
 let noButtonClicks = 0;
 let videoPlaying = false;
 
 document.querySelector('#app').innerHTML = `
-  <div id="proposal-screen" class="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 to-pink-200">
+  <div id="proposal-screen" class="flex items-center justify-center min-h-screen from-pink-200 from-pink-400 bg-gradient-to-br">
     <div class="text-center p-8 max-w-2xl">
-      <div id="lottie-animation" class="w-64 h-64 mx-auto mb-0"></div>
-      <h1 class="text-5xl font-bold text-gray-800 mb-3">Hi Mund, Are you single po ba?</h1>
+      <div id="lottie-animation" class="w-70 h-60 mx-auto mb-0"></div>
+      <h1 class="text-5xl font-bold text-gray-800 mb-3">hi, I like you!</h1>
       <div class="flex gap-6 justify-center items-end mb-4">
         <button id="yes-btn" class="btn-scale bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg">
-          YES!
+          I like you too! :)
         </button>
-        <button id="no-btn" class="btn-scale bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-6 rounded-full shadow-lg">
-          No
+        <button id="no-btn" class="btn-scale bg-red-500 hover:bg-red-600 text-white font-normal py-4 px-6 rounded-full shadow-lg">
+          Sorry I don't like you 
         </button>
       </div>
-      <div class="text-gray-600 text-base italic">
-        (Press no hehe)
+      <div class="text-gray-500 text-base italic">
+        (Just press the red button if you dont like me, I promise it's okay hehe)
       </div>
     </div>
   </div>
 
   <div id="celebration-screen" class="hidden flex items-center justify-center min-h-screen bg-gradient-to-br from-yellow-100 to-pink-200">
     <div class="text-center p-8 max-w-2xl">
-      <div id="celebration-animation" class="w-96 h-96 mx-auto mb-8"></div>
-      <h1 class="text-4xl font-bold text-gray-800 mb-4"> YAYYYY!</h1>
-      <p class="text-lg text-gray-700 mb-6"> Pogi kayka dooo and I really want to get to know u better</p>
+      <div id="celebration-animation" class="w-100 h-80 mx-auto mb-8"></div>
+      <h1 class="text-4xl font-bold text-gray-800 mb-4"> YAAAYYY!</h1>
+      <p class="text-2xl text-gray-700 mb-6"> OMG!! Does this mean we're together na ba mwehehe?</p>
       <button id="joke-no-btn" class="btn-scale bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">
-        REAL Rejection Botton :(
+        REAL Rejection Boton :(
       </button>
+      <div class="text-gray-500 text-base italic">
+        (Press this if you really really don't like me ://)
+      </div>
     </div>
   </div>
 
   <div id="sad-screen" class="hidden flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-blue-200">
     <div class="text-center p-8 max-w-2xl">
       <div id="sad-animation" class="w-96 h-96 mx-auto mb-8"></div>
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">Awtsss..</h1>
-      <p class="text-lg text-gray-700 mb-6"> char btawwww, I just wanna say na I have a crush on u. Enjoy ur day and amping permi hehe </p>
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Awtsss... :(((</h1>
+      <p class="text-lg text-gray-700 mb-6"> btawww, just wanted to say na I realy like you and I have a crush on u. Enjoy ur day and amping permi hehe </p>
       <button id="play-video-btn" class="btn-scale bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">
         Play this 
       </button>
@@ -52,7 +55,7 @@ document.querySelector('#app').innerHTML = `
   <div id="video-screen" class="hidden flex items-center justify-center min-h-screen bg-black">
     <div class="w-full h-full">
       <video id="video-player" class="w-full h-full object-cover" controls playsinline webkit-playsinline preload="metadata">
-        <source src="/assets/him.mp4" type="video/mp4">
+        <source src="/assets/ugh.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
