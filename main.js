@@ -12,17 +12,17 @@ document.querySelector('#app').innerHTML = `
   <div id="proposal-screen" class="flex items-center justify-center min-h-screen from-pink-200 from-pink-400 bg-gradient-to-br">
     <div class="text-center p-8 max-w-2xl">
       <div id="lottie-animation" class="w-70 h-60 mx-auto mb-0"></div>
-      <h1 class="text-5xl font-bold text-gray-800 mb-3">hi, I like you!</h1>
+      <h1 class="text-5xl font-bold text-gray-800 mb-3">hiii, are u single po ba?</h1>
       <div class="flex gap-6 justify-center items-end mb-4">
         <button id="yes-btn" class="btn-scale bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg">
-          I like you too! :)
+          YES!
         </button>
         <button id="no-btn" class="btn-scale bg-red-500 hover:bg-red-600 text-white font-normal py-4 px-6 rounded-full shadow-lg">
-          Sorry I don't like you 
+          nope :(
         </button>
       </div>
       <div class="text-gray-500 text-base italic">
-        (Just press the red button if you dont like me, I promise it's okay hehe)
+        (Just press the red button if ure not single hehe)
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ document.querySelector('#app').innerHTML = `
     <div class="text-center p-8 max-w-2xl">
       <div id="celebration-animation" class="w-100 h-80 mx-auto mb-8"></div>
       <h1 class="text-4xl font-bold text-gray-800 mb-4"> YAAAYYY!</h1>
-      <p class="text-2xl text-gray-700 mb-6"> OMG!! Does this mean we're together na ba mwehehe?</p>
+      <p class="text-2xl text-gray-700 mb-6"> OMG!! ure so pogii and cuteee, I have a hugggeee crush on u mwehehe <3</p>
       <button id="joke-no-btn" class="btn-scale bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">
         REAL Rejection Boton :(
       </button>
