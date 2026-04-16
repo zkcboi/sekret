@@ -156,12 +156,12 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <div id="email-popup" class="hidden fixed inset-0 flex items-center justify-center" style="background-color: rgba(0, 0, 0, 0.5);">
-      <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md mx-4" style="animation: slideIn 0.5s ease-out;">
+      <div class="bg-white rounded-lg shadow-2xl p-8 mx-4" style="animation: slideIn 0.5s ease-out; width: 90vw; max-width: 500px;">
         <div class="text-right mb-4">
           <button id="popup-close" class="text-gray-600 hover:text-gray-800 text-2xl">×</button>
         </div>
         <div id="popup-message" class="text-lg text-gray-800 font-light leading-relaxed text-justify mb-6" style="max-height: 40vh; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-right: 8px;">
-          Belated happy birthday, Bruce 🥺🎉 I know super late na gyud kay four weeks na ang nilabay and I’m really sorry wala ko naka-greet ato. The truth is, naulaw lang gyud ko and I didn’t really know how to approach you or unsa akong mahatag. I guess… I’ve just been quietly admiring you from afar this whole time.
+          <span class="block mb-4">Belated happy birthday, Bruce 🥺🎉 I know super late na gyud kay four weeks na ang nilabay and I’m really sorry wala ko naka-greet ato. The truth is, naulaw lang gyud ko and I didn’t really know how to approach you or unsa akong mahatag. I guess… I’ve just been quietly admiring you from afar this whole time.</span>
 
 <span class="block mb-4">We don’t really know each other that much yet, so I made this small website for you as my way of making it up. Simple ra siya, pero gi-effortan gyud nako because I wanted to do something special, even in my own quiet way.</span>
 
