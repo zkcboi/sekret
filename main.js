@@ -127,6 +127,9 @@ document.querySelector('#app').innerHTML = `
           ← Return & Try Again
         </button>
       </div>
+      <button id="final-back" class="btn-scale bg-gray-600 hover:bg-gray-700 text-white font-light py-2 px-6 rounded-lg text-sm transition-all duration-300 mt-6">
+        ← Back
+      </button>
     </div>
   </div>
 
@@ -376,6 +379,16 @@ finalReturn.addEventListener('click', () => {
   finalInputArea.classList.remove('hidden');
   finalGiveupArea.classList.add('hidden');
 });
+
+const finalBackBtn = document.getElementById('final-back');
+if (finalBackBtn) {
+  finalBackBtn.addEventListener('click', () => {
+    const finalScreen = document.getElementById('final-screen');
+    const acrosticScreen = document.getElementById('acrostic-screen');
+    finalScreen.classList.add('hidden');
+    acrosticScreen.classList.remove('hidden');
+  });
+}
 
 const familiarBtn = document.getElementById('familiar-btn');
 familiarBtn.addEventListener('click', () => {
