@@ -160,7 +160,7 @@ document.querySelector('#app').innerHTML = `
         <div class="text-right mb-4">
           <button id="popup-close" class="text-gray-600 hover:text-gray-800 text-2xl">×</button>
         </div>
-        <div id="popup-message" class="text-lg text-gray-800 font-light leading-relaxed text-justify mb-6">
+        <div id="popup-message" class="text-lg text-gray-800 font-light leading-relaxed text-justify mb-6" style="max-height: 300px; overflow-y: auto;">
           <span class="block mb-4">Belated happy birthday, Bruce 🥺🎉 I know super late na gyud kay four weeks na ang nilabay and I’m really sorry wala ko naka-greet ato. The truth is, naulaw lang gyud ko and I didn’t really know how to approach you or unsa akong mahatag. I guess… I’ve just been quietly admiring you from afar this whole time.</span>
 
 <span class="block mb-4">We don’t really know each other that much yet, so I made this small website for you as my way of making it up. Simple ra siya, pero gi-effortan gyud nako because I wanted to do something special, even in my own quiet way.</span>
