@@ -77,14 +77,10 @@ document.querySelector('#app').innerHTML = `
   <div id="reflection-screen" class="hidden flex items-center justify-center min-h-screen" style="background-color: #E5E5EA;">
     <div class="text-center p-8 max-w-2xl">
       <p class="text-lg text-gray-700 mb-12 font-light leading-relaxed">
-        <span class="block mb-4">You don't know me.</span>
-        <span class="block mb-4">But you’ve seen me more times than you realize.</span>
-        <span class="block mb-8"></span>
-        <span class="block mb-4">Maybe in passing.</span>
-        <span class="block mb-4">Maybe in the same place, different moments.</span>
-        <span class="block mb-8"></span>
-        <span class="block mb-4">You were busy…</span>
-        <span class="block mb-4">I was just noticing.</span>
+        <span class="block mb-4">We haven’t really had a chance to get to know each other yet.</span>
+        <span class="block mb-4">We only had one moment together, and even then, your attention was elsewhere.</span>
+        <span class="block mb-4">You were busy with your own life…</span>
+        <span class="block mb-4">And I’m just the guy who hasn’t stopped noticing you ever since.</span>
       </p>
       <button id="reflection-btn" class="btn-scale bg-gray-800 hover:bg-gray-900 text-white font-light py-3 px-12 rounded-lg shadow-lg transition-all duration-300">
         → Keep going
